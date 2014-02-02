@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.2.1.min.js"></script>
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.2/firebase.js'></script>
+        <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.2.3/firebase-simple-login.js'></script>
+        <script type='text/javascript' src='./js/user.js'></script>
+        <link rel="stylesheet" type='text/css' href='./css/index.css'></script>
+</head>
+<body class="holder">
+    <div id="userdata" class="right" style="display:none;">
+        Email:
+        <div id="emaildata"></div>
+        <a href="javascript:doLogout()">Logout</a>
+    </div>
+    <div class="clear"></div>
+    <div id="loginbox" class="middlebox center" style="display:none;">
+        Login
+        <br>
+        <br>
+        Email<input id="loginemail" type="text"/>
+        <br>
+        Password<input id="loginpass" type="password"/>
+        <br>
+        <br>
+        <button id="loginbtn">Login</button>
+        <br>
+        <a href="javascript:showSignup()">Sign Up</a>
+        <a href="javascript:showForgotPassword()">Forgot Password</a>
+    </div>
+    <div id="signupbox" class="middlebox center" style="display:none;">
+        Sign Up
+        <br>
+        <br>
+        Email<input id="newemail" type="text"/>
+        <br>
+        Password<input id="newpass" type="password"/>
+        <br>
+        <br>
+        <button id="signupbtn">Sign Up</button>
+        <br>
+        <a href="javascript:showLogin()">I already have an account</a>
+    </div>
+    <div id="forgotbox" class="middlebox center" style="display:none;">
+        Forgot Password?
+        <br>
+        <br>
+        Enter your email and we'll send you a reset.
+        <br>
+        Email<input id="forgotemail" type="text"/>
+        <br>
+        <br>
+        <button id="forgotbtn">Reset Password</button>
+        <br>
+        <a href="javascript:showLogin()">Just kidding, I remember it</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.holder{
+    background:#00ccff;
+}
+
+.clear {
+    clear:both;
+}
+
+.right {
+    float:right;
+}
+
+.middlebox{
+    margin-top:200px;
+    margin-bottom:200px;
+    padding:30px;
+    width:300px;
+    background:#ffffff;
+}
+
+.center {
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
